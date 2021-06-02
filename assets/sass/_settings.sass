@@ -6,3 +6,27 @@
     &:not([disabled]):hover
       @content
 
+body 
+  background-color: $light-color
+  color: $dark-color
+
+img 
+  max-width: 100%
+  object-fit: cover
+
+h1, h2, h3, h4, h5, h6, p, ul
+  margin: 0
+  padding: 0
+
+.container
+  max-width: 1170px
+  margin: 0 auto
+  padding: 0 15px
+
+.button
+  border: none
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+  cursor: pointer
+  transition: $transition
