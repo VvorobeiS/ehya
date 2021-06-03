@@ -1,4 +1,5 @@
 .header
+  background-color: $light-color
   &__container
     display: flex
     justify-content: space-between
@@ -36,6 +37,9 @@
   &__item
     &:not(:last-child)
       margin-right: 23px
+    &--desktop
+      &-hidden
+        display: none
   &__link
     font-family: $Open-Sans
     font-style: normal
@@ -47,5 +51,8 @@
     transition: $transition
     +hover
       color: $primary-color
+    
+.menu-burger
+  display: none
 
   

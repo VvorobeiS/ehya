@@ -1,0 +1,157 @@
+@media (max-width: 1200px)
+  .hero
+    &-info
+      margin-right: 20px
+
+  .button
+    &-outline
+      margin-right: 5px 
+
+@media (max-width: 992px)
+  .hero
+    padding-top: 75px
+    &-info
+      &__title
+        font-size: 38px
+      &__author
+        font-size: 18px
+      &__description
+        font-size: 16px
+    &-image
+      padding: 90px 50px
+    &-buttons
+      display: flex
+      flex-direction: column
+      align-items: center
+    
+  .button
+    &-outline
+      max-width: 211px
+      margin-bottom: 15px
+    &-primary
+      max-width: 235px
+
+@media (max-width: 768px)
+  .container
+    max-width: 576px
+    width: 92%
+
+  body
+    padding-top: 64px
+
+  .header
+    &--mobile-fixed
+      position: fixed
+      top: 0
+      left: 0
+      right: 0
+      z-index: 99
+    &__btn
+      display: none
+      &--mobile
+        &-visible
+          display: inline-block
+          margin: 0
+
+  .nav
+    position: fixed
+    top: 64px
+    right: 0
+    bottom: 0
+    left: 0
+    transform: translateX(200%)
+    padding-top: 50px
+    background-color: $text-color
+    transition: 0.3s  
+    &-list
+      flex-direction: column
+      align-items: center
+      &__item
+        &:not(:last-child)
+          margin: 0
+          margin-bottom: 30px
+        &--desktop
+          &-hidden
+            display: list-item
+    &--visible
+      transform: translateX(0%)
+      overflow-y: auto
+      transition: 0.3s 
+
+  .menu-burger
+    display: flex
+    width: 36px
+    height: 21px
+    align-items: center
+    justify-content: space-between
+    flex-direction: column
+    border: none
+    background-color: $light-color
+    cursor: pointer
+    &__line
+      width: 22px
+      height: 3px
+      background-color: #3A4C66
+      border-radius: 8px
+
+  .hero
+    &__container
+      flex-direction: column
+      align-items: center
+    &-info
+      flex-direction: column
+      align-items: center
+      margin: 0
+      padding: 0
+      &__title
+        font-size: 48px
+        text-align: center
+      &__author
+        font-size: 20px
+      &__description
+        font-size: 18px
+        text-align: center
+        margin-bottom: 17px
+    &-buttons
+      margin-bottom: 36px
+    &-image
+      width: 100%
+      padding: 59px 68px
+      &__book
+        margin: 0 auto
+
+@media ( min-width: 320px )  and ( max-width: 480px )
+  .header
+    &__container
+      padding: 18px 5px 18px
+
+  .hero
+    padding-top: 36px
+    &-info
+      &__title
+        margin-bottom: 24px
+        font-size: 32px
+        line-height: 40px
+        letter-spacing: 0.2px
+      &__author
+        margin-bottom: 32px
+        font-size: 16px
+        letter-spacing: 0.2px
+      &__description
+        width: 280px
+        font-size: 16px
+        line-height: 23px
+    &-image
+      padding: 59px 60px
+      &__book
+        width: 144px
+        height: 215px
+  
+  .button
+    &-outline
+      margin-bottom: 15px
+      padding: 7px 17px 7px 21px
+    &-primary
+      padding: 6px 27px
+      font-size: 16px
+  
