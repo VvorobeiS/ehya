@@ -70,8 +70,17 @@
     &__link
       margin: 0 auto
 
-  
-
+  .categories
+    &-slider
+      &__btn
+        top: 120%
+        &--prev
+          transform: translate(-45%, 0)
+          left: 45%
+        &--next
+          transform: translate(45%, 0)
+          right: 45%
+       
 @media (max-width: 992px)
   .hero
     padding-top: 75px
@@ -129,10 +138,11 @@
       &__price
         margin-bottom: 20px
         font-size: 16px
-
+          
 @media (max-width: 768px)
   .container
-    padding: 0
+    padding-right: 0
+    padding-left: 0
     max-width: 576px
     width: 92%
 
@@ -299,6 +309,27 @@
     &__line
       margin-bottom: 19px
 
+  .categories
+    &__container
+      padding-top: 52px
+    &-slider
+      &__slide
+        padding: 20px 0 20px
+      &__img
+        width: 36px
+        height: 36px
+        margin-bottom: 16px
+      &__title
+        margin-bottom: 10px
+        font-size: 16px
+        line-height: 20px
+      &__text
+        font-size: 12px
+        line-height: 20px
+      &__btn
+        width: 48px
+        height: 48px
+
 @media ( min-width: 320px )  and ( max-width: 480px )
   .hero
     padding-top: 36px
@@ -330,3 +361,24 @@
       padding: 6px 27px
       font-size: 16px
   
+  .categories
+    &-slider
+      &__title
+        max-width: 112px
+        font-size: 14px
+        &--mb-3
+          margin-bottom: 30px
+      &__text
+        max-width: 99px
+      &__btn
+        top: 108%
+        &--prev
+          transform: translate(-38%, 0)
+          left: 38%
+        &--next
+          transform: translate(38%, 0)
+          right: 38%
+       
+    &__line
+      margin-bottom: 53px
+      

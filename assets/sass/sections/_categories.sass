@@ -1,0 +1,77 @@
+.categories
+  &__container
+    padding-top: 79px
+  &__line
+    width: 100%
+    margin: 0
+    margin-bottom: 60px
+    border: 1px solid #ECEEF2
+  &-slider
+    position: relative
+    &__container
+      width: 100%
+      text-align: center
+    &__slide
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 265px
+      padding: 40px 0 30px
+      border: 1px solid #ECEEF2
+      border-radius: 8px
+      overflow: hidden
+    &__img
+      width: 64px
+      height: 64px
+      margin-bottom: 40px
+    &__title
+      margin-bottom: 12px
+      font-family: $Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      letter-spacing: 0.2px
+    &__text
+      font-family: $Open-Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      color: $text-color
+    &__btn
+      position: absolute
+      top: 50%
+      width: 56px
+      height: 56px
+      padding: 0
+      background-color: $light-color
+      box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
+      border-radius: 50%
+      border: none
+      z-index: 10
+      transition: $transition
+      cursor: pointer
+      +hover
+        width: 76px
+        height: 76px
+      &--prev
+        transform: translate(-50%, -50%)
+        left: 0
+        background-image: url(../images/svg/arrow-prev.svg)
+        background-repeat: no-repeat
+        background-position: center center
+      &--next
+        transform: translate(50%, -50%)
+        right: 0
+        background-image: url(../images/svg/arrow-next.svg)
+        background-repeat: no-repeat
+        background-position: center center
+      &-disabled
+        display: none
+    
+.swiper
+  &-button
+    &-disabled
+       display: none
+

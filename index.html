@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/jquery-3.6.0.min.js" defer></script>
+    <script src="./assets/js/swiper-bundle.min.js" defer></script>
     <script src="./assets/js/main.js" defer></script>
   </head>
   <body>
@@ -124,10 +125,7 @@
             </div>
             <!-- /.good-image -->
             <div class="good-info">
-              <h3 class="good-info__title">
-                Educated :
-                a Memoir
-              </h3>
+              <h3 class="good-info__title">Educated : a Memoir</h3>
               <span class="good-info__category">Education</span>
               <span class="good-info__price">$28.00</span>
               <div class="good-buttons">
@@ -183,10 +181,7 @@
             </div>
             <!-- /.good-image -->
             <div class="good-info">
-              <h3 class="good-info__title">
-                There There :
-                a Novel by TO
-              </h3>
+              <h3 class="good-info__title">There There : a Novel by TO</h3>
               <span class="good-info__category">Novel</span>
               <span class="good-info__price">$20.00</span>
               <div class="good-buttons">
@@ -214,10 +209,7 @@
             </div>
             <!-- /.good-image -->
             <div class="good-info">
-              <h3 class="good-info__title">
-                WMNDFL :
-                The Inspiration
-              </h3>
+              <h3 class="good-info__title">WMNDFL : The Inspiration</h3>
               <span class="good-info__category">Business</span>
               <span class="good-info__price">$23.00</span>
               <div class="good-buttons">
@@ -298,7 +290,9 @@
               </div>
               <!-- /.best-image -->
               <div class="best-info">
-                <h3 class="best-info__title">Hacking&nbsp;Growth Break Problem</h3>
+                <h3 class="best-info__title">
+                  Hacking&nbsp;Growth Break Problem
+                </h3>
                 <span class="best-info__price">$23.00</span>
                 <button class="button good-button">Купить</button>
               </div>
@@ -339,7 +333,7 @@
               <!-- /.best-info -->
             </div>
             <!-- /.best-good -->
-            <hr class="best__line">
+            <hr class="best__line" />
             <a href="#!" class="best__link">Лучшие книги</a>
           </div>
           <!-- /.best-wrapper -->
@@ -349,5 +343,92 @@
       <!-- /.container goods__container -->
     </section>
     <!-- /.goods -->
+    <section class="categories">
+      <div class="container categories__container">
+        <hr class="categories__line">
+        <div class="categories-slider">
+          <div class="swiper-container categories-slider__container">
+            <div class="swiper-wrapper categories-slider__wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide categories-slider__slide">
+                <img
+                  src="./assets/images/svg/category-icon-1.svg"
+                  alt="Иконка категории"
+                  class="categories-slider__img"
+                />
+                <h3 class="categories-slider__title">Бизнес & Финансы</h3>
+                <span class="categories-slider__text"
+                  >Книги про мир бизнеса</span
+                >
+              </div>
+              <div class="swiper-slide categories-slider__slide">
+                <img
+                  src="./assets/images/svg/category-icon-2.svg"
+                  alt="Иконка категории"
+                  class="categories-slider__img"
+                />
+                <h3 class="categories-slider__title categories-slider__title--mb-3">Самомотивация</h3>
+                <span class="categories-slider__text">Книги о мотивации</span>
+              </div>
+              <div class="swiper-slide categories-slider__slide">
+                <img
+                  src="./assets/images/svg/category-icon-3.svg"
+                  alt="Иконка категории"
+                  class="categories-slider__img"
+                />
+                <h3 class="categories-slider__title">Романы Теленовеллы</h3>
+                <span class="categories-slider__text"
+                  >Книги с крутыми историями</span
+                >
+              </div>
+              <div class="swiper-slide categories-slider__slide">
+                <img
+                  src="./assets/images/svg/category-icon-4.svg"
+                  alt="Иконка категории"
+                  class="categories-slider__img"
+                />
+                <h3 class="categories-slider__title">Навыки будущего</h3>
+                <span class="categories-slider__text"
+                  >Книги для самоподготовки
+                </span>
+              </div>
+              <div class="swiper-slide categories-slider__slide">
+                <img
+                  src="./assets/images/svg/category-icon-3.svg"
+                  alt="Иконка категории"
+                  class="categories-slider__img"
+                />
+                <h3 class="categories-slider__title">Романы Теленовеллы</h3>
+                <span class="categories-slider__text"
+                  >Книги с крутыми историями</span
+                >
+              </div>
+              <div class="swiper-slide categories-slider__slide">
+                <img
+                  src="./assets/images/svg/category-icon-4.svg"
+                  alt="Иконка категории"
+                  class="categories-slider__img"
+                />
+                <h3 class="categories-slider__title">Навыки будущего</h3>
+                <span class="categories-slider__text"
+                  >Книги для самоподготовки
+                </span>
+              </div>
+            </div>
+            <!-- ./categoties-slider__wrapper -->
+          </div>
+          <!-- /.categories-slider__container -->
+          <button
+              class="categories-slider__btn categories-slider__btn--prev"
+            ></button>
+            <button
+              class="categories-slider__btn categories-slider__btn--next"
+            ></button>
+        </div>
+        <!-- /.categories-slider -->
+      </div>
+      <!-- /.container categories__container -->
+    </section>
+    <!-- /.categories -->
   </body>
 </html>
