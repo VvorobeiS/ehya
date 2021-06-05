@@ -10,6 +10,7 @@
     padding-bottom: 56px
     &__title
       max-width: 445px
+      max-height: 180px
       margin-bottom: 28px
       font-family: $Roboto-Condensed
       font-style: normal
@@ -17,9 +18,11 @@
       font-size: 48px
       line-height: 60px
       letter-spacing: 0.2px
+      overflow: auto
       &--orange
         color: #FAAD13
     &__author
+      max-width: 320px
       flex-basis: 100%
       margin-bottom: 36px
       font-family: $Roboto
@@ -29,15 +32,20 @@
       line-height: 24px
       letter-spacing: 0.2px
       text-transform: uppercase
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
     &__description
       flex-basis: 100%
       max-width: 585px
+      max-height: 200px
       margin-bottom: 56px
       font-family: $Open-Sans
       font-style: normal
       font-weight: normal
       font-size: 18px
       line-height: 32px
+      overflow: auto
   &-buttons
     flex-basis: 100%
   &-image

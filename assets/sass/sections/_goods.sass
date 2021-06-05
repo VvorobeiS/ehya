@@ -92,8 +92,7 @@
       font-size: 22px
       line-height: 32px
       letter-spacing: 0.2px
-      overflow: hidden
-      text-overflow: ellipsis
+      overflow: auto
     &__category
       flex-basis: 100%
       margin-bottom: 24px
@@ -102,6 +101,9 @@
       font-weight: normal
       font-size: 16px
       line-height: 22px
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
     &__price
       margin-bottom: 24px
       font-family: $Roboto-Condensed
@@ -120,6 +122,7 @@
     display: flex
     align-items: flex-end
   &-button
+    max-width: 110px
     padding: 7px 20px
     font-family: $Open-Sans
     font-style: normal
@@ -186,8 +189,7 @@
       font-size: 22px
       line-height: 32px
       letter-spacing: 0.2px
-      overflow: hidden
-      text-overflow: ellipsis
+      overflow: auto
     &__price
       flex-basis: 100%
       margin-bottom: 22px
