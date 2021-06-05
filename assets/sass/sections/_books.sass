@@ -1,0 +1,38 @@
+.books
+  background-color: $dark-color
+  &__title
+    margin-bottom: 61px
+    font-family: $Roboto-Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 48px
+    letter-spacing: 0.2px
+    color: $light-color
+  &-slider
+    position: relative
+    padding-top: 58px
+    padding-bottom: 79px
+    &__container
+      text-align: center
+    &__img
+      width: 204px
+      height: 298px
+      border-radius: 8px
+    &__btn
+      position: absolute
+      top: 58px
+      right: 0
+      width: 54px
+      height: 56px
+      padding: 0
+      background-color: transparent
+      fill: $light-color
+      border: 1px solid $light-color
+      border-radius: 50%
+      cursor: pointer
+      &--prev
+        right: 78px
+      &--disabled
+        fill: #5A7184
+        border-color: #5A7184

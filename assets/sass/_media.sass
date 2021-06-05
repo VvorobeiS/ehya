@@ -13,8 +13,9 @@
 
   .recommendation
     justify-content: space-around
-    margin: 0
     width: 100%
+    margin: 0
+    margin-bottom: 50px
     &__btn
       margin: 0
   
@@ -83,7 +84,8 @@
        
 @media (max-width: 992px)
   .hero
-    padding-top: 75px
+    &__container
+      padding-top: 75px
     &-info
       &__title
         font-size: 38px
@@ -93,17 +95,15 @@
         font-size: 16px
     &-image
       padding: 90px 50px
-    &-buttons
-      display: flex
-      flex-direction: column
-      align-items: center
     
   .button
     &-outline
       max-width: 211px
+      padding: 17px 20px 15px 20px
       margin-bottom: 15px
     &-primary
       max-width: 235px
+      padding: 15px 22px
 
   .good
     flex-direction: column
@@ -112,6 +112,7 @@
     width: 280px
     max-height: 312px
     height: 100%
+    margin-top: 40px
     margin-bottom: 45px
     padding: 0
     padding-bottom: 32px
@@ -235,7 +236,8 @@
         margin: 0 auto
 
   .goods
-    padding-top: 56px
+    &__container
+      padding-top: 56px
     &__title
       text-align: center
       
@@ -259,7 +261,6 @@
       text-transform: none
       
   .good
-    margin-top: 40px
     margin-bottom: 24px
     &--mobile
       &-hidden
@@ -330,9 +331,32 @@
         width: 48px
         height: 48px
 
+  .books
+    &__title
+      margin-bottom: 41px
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+    &-slider
+      padding-top: 48px
+      padding-bottom: 136px
+      &__btn
+        top: 465px
+        width: 48px
+        height: 48px
+        &--prev
+          transform: translate(-37%, 0)
+          left: 37%
+        &--next
+          transform: translate(37%, 0)
+          right: 37%
+        
+
+
 @media ( min-width: 320px )  and ( max-width: 480px )
   .hero
-    padding-top: 36px
+    &__container
+      padding-top: 36px
     &-info
       &__title
         margin-bottom: 24px
@@ -352,9 +376,14 @@
       &__book
         width: 144px
         height: 215px
+    &-buttons
+      display: flex
+      flex-direction: column
+      align-items: center
   
   .button
     &-outline
+      margin-right: 0
       margin-bottom: 15px
       padding: 7px 17px 7px 21px
     &-primary
@@ -362,6 +391,8 @@
       font-size: 16px
   
   .categories
+    &__container
+      padding-bottom: 137px
     &-slider
       &__title
         max-width: 112px
