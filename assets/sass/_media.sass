@@ -88,6 +88,10 @@
     &-content
       &__item
         max-width: 270px
+  .partners
+    &-list
+      &__item
+        width: 226px
        
 @media (max-width: 992px)
   .hero
@@ -164,6 +168,13 @@
         &-text
           margin-bottom: 16px
           font-size: 14px
+  .partners
+    &-list
+      &__item
+        width: 238px
+        &:nth-child(1n+10)
+          display: none
+          
           
 @media (max-width: 768px)
   .container
@@ -292,6 +303,11 @@
         &-icon
           transform: scale(0.6, 0.6)
 
+  .partners
+    &-list
+      &__item
+        width: 145px
+
 @media (max-width: 576px)
   .goods
     &__title
@@ -412,6 +428,10 @@
         &-text
           font-size: 12px
           line-height: 20px
+
+  .partners
+    &__container
+      padding-top: 36px
       
 @media ( min-width: 320px )  and ( max-width: 480px )
   .hero
@@ -476,7 +496,7 @@
   .story
     &__container
       padding-top: 44px
-      padding-bottom: 43px
+      padding-bottom: 36px
     &__title
       font-size: 28px
       line-height: 36px
@@ -497,4 +517,19 @@
         &-video
           height: 138px
         &--mobile-hidden
+          display: none
+
+  .partners
+    &__title
+      max-width: 278px
+      margin: 0 auto
+      margin-bottom: 22px
+    &-list
+      padding: 0 15px
+      &__item
+        width: 130px
+        margin-bottom: 21px
+        &:nth-child(1n+5)
+          margin-bottom: 0
+        &:nth-child(1n+7)
           display: none
