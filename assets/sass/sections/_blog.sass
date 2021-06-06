@@ -1,0 +1,96 @@
+.blog
+  &__container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: flex-start
+    padding-top: 100px
+    padding-bottom: 100px
+  &__title
+    flex-basis: 80%
+    margin-bottom: 40px
+    font-family: $Roboto-Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.2px
+  &__btn
+    margin-top: 7px
+    padding: 11px 53px
+    font-family: $Roboto-Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    letter-spacing: 0.2px
+    color: $primary-color
+    border: 2px solid $primary-color
+    border-radius: 22px
+    text-decoration: none
+  &-main
+    display: flex
+    flex-direction: column
+    max-width: 556px
+    &__img
+      margin-bottom: 30px
+      border-radius: 8px
+    &__title
+      margin-bottom: 16px
+      font-family: $Roboto-Condensed
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      letter-spacing: 0.2px
+    &__text
+      max-width: 536px
+      max-height: 100px
+      font-family: $Open-Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+      overflow: auto
+  &-wrapper
+    display: flex
+    flex-direction: column
+  &-item
+    display: flex
+    justify-content: space-between
+    width: 556px
+    &:not(:last-child)
+      margin-bottom: 30px
+    &__img
+      max-width: 250px
+      border-radius: 8px
+    &__info
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      justify-content: space-around
+    &__date
+      font-family: $Open-Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+    &__title
+      max-width: 268px
+      font-family: $Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      letter-spacing: 0.2px
+    &__link
+      font-family: $Roboto-Condensed
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+      letter-spacing: 0.2px
+      color: $primary-color
+      text-decoration: none
+      text-transform: uppercase
+

@@ -92,6 +92,17 @@
     &-list
       &__item
         width: 226px
+
+  .blog
+    &__container
+      justify-content: space-around
+    &-main
+      max-width: 450px
+    &-item
+      width: 500px
+      justify-content: space-around
+      &__img
+        max-width: 220px
        
 @media (max-width: 992px)
   .hero
@@ -174,6 +185,29 @@
         width: 238px
         &:nth-child(1n+10)
           display: none
+
+  .blog
+    &__container
+      flex-direction: column
+    &__title
+      margin: 0 auto
+      margin-bottom: 48px
+    &__btn
+      order: 5
+      margin: 0 auto
+    &-main
+      max-width: 100%
+      margin-bottom: 30px
+    &-wrapper
+      width: 100%
+    &-item
+      justify-content: start
+      width: 100%
+      &:last-child
+        margin-bottom: 40px
+      &__img
+        max-width: 450px
+        margin-right: 30px
           
           
 @media (max-width: 768px)
@@ -308,6 +342,22 @@
       &__item
         width: 145px
 
+  .blog
+    &__title
+      font-size: 38px
+    &-main
+      &__title
+        font-size: 22px
+      &__text
+        font-size: 16px
+    &-item
+      &__img
+        max-width: 280px
+      &__date
+        font-size: 12px
+      &__title
+        font-size: 18px
+
 @media (max-width: 576px)
   .goods
     &__title
@@ -433,6 +483,24 @@
     &__container
       padding-top: 36px
       
+  .blog
+    &__title
+      font-size: 38px
+    &-main
+      &__title
+        font-size: 22px
+      &__text
+        font-size: 16px
+    &-item
+      &__img
+        max-width: 210px
+      &__date
+        font-size: 12px
+      &__title
+        font-size: 16px
+      &__link
+        font-size: 14px
+
 @media ( min-width: 320px )  and ( max-width: 480px )
   .hero
     &__container
@@ -520,6 +588,8 @@
           display: none
 
   .partners
+    &__container
+      padding-bottom: 52px
     &__title
       max-width: 278px
       margin: 0 auto
@@ -533,3 +603,46 @@
           margin-bottom: 0
         &:nth-child(1n+7)
           display: none
+
+  .blog
+    &__container
+      padding-top: 56px
+    &__btn
+      padding: 11px 43px
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &-main
+      max-width: 95%
+      margin: 0 auto
+      margin-bottom: 27px
+      &__img
+        max-width: 280px
+        max-height: 120px
+        margin-bottom: 20px
+      &__title
+        margin-bottom: 11px
+        font-size: 16px
+        line-height: 20px
+      &__text
+        font-size: 12px
+        line-height: 24px
+    &-wrapper
+      align-items: center
+    &-item
+      max-width: 95%
+      &__img
+        max-width: 90px
+        height: 90px
+        margin-right: 21px
+      &__info
+        justify-content: space-between
+      &__date
+        font-size: 10px
+        line-height: 20px
+      &__title
+        font-size: 14px
+        line-height: 20px
+      &__link
+        font-size: 10px
+        line-height: 20px
