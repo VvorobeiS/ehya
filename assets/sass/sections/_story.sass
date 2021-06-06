@@ -1,0 +1,114 @@
+.story
+  &__container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding: 103px 83px 100px
+  &__title
+    flex-basis: 50%
+    font-family: $Roboto-Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.2px
+  &__text
+    flex-basis: 50%
+    max-width: 383px
+    max-height: 130px
+    margin-bottom: 21px
+    margin-right: 35px
+    font-family: $Open-Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 32px
+    overflow: auto
+  &-content
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &__btn
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 15px
+      height: 36px
+      padding: 0
+      background-color: transparent
+      fill: $primary-color
+    &__icon
+      width: 14px
+      height: 19px
+    &__main
+      position: relative
+      max-width: 1005px
+      max-height: 380px
+      margin-bottom: 29px
+      &-img
+        width: 100%
+        height: 100%
+      &-play
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100px
+        height: 100px
+        background-color: $light-color
+        border-radius: 50%
+        fill: $primary-color
+        transition: $transition
+        +hover
+          width: 120px
+          height: 120px
+      &-icon
+        width: 30px
+        height: 35px
+    &__item
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      max-width: 315px
+      &-video
+        position: relative
+        max-width: 315px
+        max-height: 200px
+        margin-bottom: 22px
+      &-img
+        width: 100%
+        height: 100%
+      &-play
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        fill: $light-color
+        transition: $transition
+        +hover
+          fill: $primary-color
+      &-icon
+        width: 30px
+        height: 35px
+      &-info
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+      &-title
+        margin-bottom: 10px
+        font-family: $Roboto
+        font-style: normal
+        font-weight: 500
+        font-size: 22px
+        line-height: 32px
+        letter-spacing: 0.2px
+      &-text
+        font-family: $Open-Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 22px
+
