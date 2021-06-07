@@ -28,6 +28,10 @@
     border: 2px solid $primary-color
     border-radius: 22px
     text-decoration: none
+    transition: $transition
+    +hover
+      background-color: $primary-color
+      color: $light-color
   &-main
     display: flex
     flex-direction: column
@@ -88,6 +92,7 @@
       letter-spacing: 0.2px
       overflow: auto
     &__link
+      position: relative
       font-family: $Roboto-Condensed
       font-style: normal
       font-weight: bold
@@ -97,4 +102,16 @@
       color: $primary-color
       text-decoration: none
       text-transform: uppercase
-
+      &:after
+        content: ''
+        position: absolute
+        top: 100%
+        left: 50%
+        transform: translate(-50%, 30px)
+        width: 95%
+        border: 1px solid rgba(#fff, 0)
+        transition: $transition
+      +hover
+        &:after
+          transform: translate(-50%, 5px)
+          border: 1px solid $primary-color
