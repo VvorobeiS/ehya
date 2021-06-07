@@ -45,15 +45,15 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'mr.vorob@bk.ru'; // Логин на почте
-    $mail->Password   = 'VvorobeiS1996@'; // Пароль на почте
+    $mail->Host       = ''; // SMTP сервера вашей почты
+    $mail->Username   = ''; // Логин на почте
+    $mail->Password   = ''; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('mr.vorob@bk.ru', 'Ehya'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('', 'Ehya'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('mr.vorob@bk.ru');  
+    $mail->addAddress('diablo300996@mail.ru');  
     
     // Отправка сообщения
     $mail->isHTML(true);
