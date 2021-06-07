@@ -50,7 +50,7 @@ try {
     $mail->Password   = 'VvorobeiS1996@'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('mr.vorob@bk.ru', 'Best Tour Plan'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('mr.vorob@bk.ru', 'Ehya'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('mr.vorob@bk.ru');  
