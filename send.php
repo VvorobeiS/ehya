@@ -10,7 +10,7 @@ if($_POST['form'] == 1) {
     $subscribe = $_POST['subscribe'];
     
     // Формирование самого письма
-    $title = "Новое обращение ehya";
+    $title = "Новое обращение Ehya";
     $body = "
     <h2>Подписка на новости</h2>
     <br>Почта: $subscribe<br>
@@ -25,7 +25,7 @@ if($_POST['form'] == 2) {
     $message = $_POST['message'];
 
     // Формирование самого письма
-    $title = "Новое обращение Best Tour Plan";
+    $title = "Новое обращение Ehya";
     $body = "
     <h2>Modal</h2>
     <b>Имя: $name<br>
