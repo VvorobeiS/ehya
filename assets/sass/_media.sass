@@ -406,7 +406,15 @@
     &-bottom
       display: none
 
+  &.modal
+    &__dialog
+      width: 70%
+      padding: 15px 20px
+
 @media (max-width: 576px)
+  #subscribe-error
+    bottom: 57px
+  
   .goods
     &__title
       font-size: 28px
@@ -550,6 +558,8 @@
         font-size: 14px
 
   .newsletter
+    &__container
+      padding-bottom: 47px
     &-wrapper
       align-items: stretch
     &__form
@@ -574,7 +584,7 @@
 
   .footer
     &__container
-      padding: 47px 11px
+      padding: 0 11px 47px
       justify-content: space-between
     &__list
       flex-basis: 47%
@@ -586,6 +596,9 @@
     &__item
       &:not(:last-child)
         margin-bottom: 13px
+    
+  .back__title
+    flex-basis: 90%
 
 @media ( min-width: 320px )  and ( max-width: 480px )
   .hero
@@ -745,3 +758,11 @@
       line-height: 36px
     &__input
       width: 272px
+
+  .modal
+    &__dialog
+      width: 90%
+    &__title
+      font-size: 16px
+    &__button
+      padding: 11px 15px
