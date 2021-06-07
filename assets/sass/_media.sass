@@ -113,6 +113,16 @@
     &__input
       width: 430px
 
+  .footer
+    &__container
+      justify-content: space-around
+    &-info
+      margin-right: 0
+      &__slogan
+        max-width: 240px
+    &__list
+      margin-right: 0
+
 @media (max-width: 992px)
   .hero
     &__container
@@ -227,7 +237,12 @@
     &__form
       margin-top: 0
           
-          
+  .footer
+    &__title
+      font-size: 16px
+    &__item
+      font-size: 14px
+
 @media (max-width: 768px)
   .container
     padding-right: 0
@@ -375,6 +390,21 @@
         font-size: 12px
       &__title
         font-size: 18px
+
+  .footer
+    &-info
+      order: 6
+      flex-basis: 100%
+      align-items: center
+      justify-content: center
+      margin-top: 42px
+      &__logo
+        margin-bottom: 14px
+      &__slogan
+        margin-bottom: 15px
+        text-align: center
+    &-bottom
+      display: none
 
 @media (max-width: 576px)
   .goods
@@ -541,6 +571,21 @@
       top: 23px
       left: 20px
       transform: none
+
+  .footer
+    &__container
+      padding: 47px 11px
+      justify-content: space-between
+    &__list
+      flex-basis: 47%
+    &__product,
+    &__service
+      margin-bottom: 39px
+    &__title
+      margin-bottom: 17px
+    &__item
+      &:not(:last-child)
+        margin-bottom: 13px
 
 @media ( min-width: 320px )  and ( max-width: 480px )
   .hero
